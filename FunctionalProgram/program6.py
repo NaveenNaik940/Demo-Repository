@@ -1,8 +1,8 @@
 '''
-@Author: Your Name
-@Date: 2024-07-23
-@Last Modified by: Your Name
-@Last Modified time: 2024-07-23
+@Author: Naveen Madev Naik
+@Date: 2024-07-23 16:30:00
+@Last Modified by: Naveen Madev Naik
+@Last Modified time: 2024-07-23 16:55:00
 @Title :Program to convert a decimal number to a 4-byte binary string representation
 '''
 
