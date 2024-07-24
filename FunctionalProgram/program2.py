@@ -2,7 +2,7 @@
 @Author:Naveen Madev Naik
 @Date: 2024-07-23 14:39:00
 @Last Modified by: Naveen Madev Naik
-@Last Modified time: 2024-07-23 14:39:00
+@Last Modified time: 2024-07-24 11:00:00
 @Title :Program to find the week day of the date
 
 '''
@@ -22,12 +22,12 @@ def day_of_week(day,month,year):
             year -= 1
             month += 12
         
-    # Calculate y0, x, and m0
+    
     year = year - (14 - month) // 12
     x = year + year // 4 - year // 100 + year // 400
     month = month + 12 * ((14 - month) // 12) - 2
     
-    # Calculate d0
+    
     day = (day + x + (31 * month) // 12) % 7
     
     return day
