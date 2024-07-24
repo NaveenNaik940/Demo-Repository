@@ -45,6 +45,17 @@ def to_binary(number):
     return binary_digits
 
 def swap_nibbles_check_power_of_two(binary_digits):
+    """
+    Description:
+         This function will swap the nibbles and check the decimal of swapped nibble is power of two
+
+    Parameter:
+         binary_digits: binary converted decimal used for swaping
+
+    return:
+         int: resultant number
+         boolean:is_power_of_two()               
+    """
     binary_digits[0:4],binary_digits[4:8]=binary_digits[4:8],binary_digits[0:4]
     resultant_number=0
 
@@ -56,6 +67,14 @@ def swap_nibbles_check_power_of_two(binary_digits):
     
 
 def is_power_of_two(number):
+    """
+    Description:
+          this function will check whether givennumber is power of two
+    Parameter:
+          number:will check this number is power of two or not
+    return:
+          boolean            
+    """
     if number <= 0:
         return False
     
@@ -64,7 +83,6 @@ def is_power_of_two(number):
     return log_value.is_integer()
 
 def main():
-    """Main function to execute the program."""
     try:
         decimal_number = int(input("Enter a non-negative integer: "))
         if decimal_number < 0:
