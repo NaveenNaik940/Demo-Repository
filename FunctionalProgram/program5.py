@@ -2,7 +2,7 @@
 @Author: Naveen Madev Naik
 @Date: 2024-07-23 15:40:00
 @Last Modified by: Naveen Madev Naik
-@Last Modified time: 2024-07-23 15:40:00
+@Last Modified time: 2024-07-24 11:08:00
 @Title :Program to compute the square root of a nonnegative number using Newton's method
 '''
 
@@ -32,13 +32,13 @@ def newton_sqrt(c, tolerance=1e-10):
         if abs(next_x - x) < tolerance:
             break
         
-        # Update the current approximation
+        # Updating the current approximation
         x = next_x
     
     return x
 
 def main():
-    """Main function to execute the program."""
+    
     try:
         c = float(input("Enter a nonnegative number to find the square root of: "))
         if c < 0:

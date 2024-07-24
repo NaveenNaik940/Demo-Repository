@@ -2,7 +2,7 @@
 @Author: Naveen Madev Naik
 @Date: 2024-07-23 16:57:00
 @Last Modified by: Naveen Madev Naik
-@Last Modified time: 2024-07-23 16:57:00
+@Last Modified time: 2024-07-24 11:08:00
 @Title :Program to convert a decimal number and swaping nibbles and checking decimal of swapped nibbles is power of 2
 '''
 
@@ -24,7 +24,7 @@ def to_binary(number):
     
     binary_digits = []
     
-    # Handle the special case where the number is zero
+    # Handeling the special case where the number is zero
     if number == 0:
         binary_digits.append(0)
     

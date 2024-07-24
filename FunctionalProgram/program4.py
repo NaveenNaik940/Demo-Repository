@@ -1,8 +1,8 @@
 '''
 @Author: Naveen Madev Naik
-@Date: 2024-07-23
+@Date: 2024-07-23 16:00:00
 @Last Modified by: Naveen Madev Naik
-@Last Modified time: 2024-07-23
+@Last Modified time: 2024-07-24 11:09:00
 @Title :Program to calculate the monthly payments for a loan
 '''
 
@@ -23,7 +23,7 @@ def calculate_monthly_payment(principal, years, annual_rate):
     # Total number of monthly payments
     num_payments = years * 12
     
-    # Calculate the monthly payment using the formula
+    # Calculating the monthly payment using the formula
     monthly_payment = (principal * monthly_rate) / (1 - (1 + monthly_rate) ** -num_payments)
     
     return monthly_payment

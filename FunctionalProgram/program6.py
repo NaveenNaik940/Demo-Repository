@@ -2,7 +2,7 @@
 @Author: Naveen Madev Naik
 @Date: 2024-07-23 16:30:00
 @Last Modified by: Naveen Madev Naik
-@Last Modified time: 2024-07-23 16:55:00
+@Last Modified time: 2024-07-24 11:00:00
 @Title :Program to convert a decimal number to a 4-byte binary string representation
 '''
 
@@ -21,7 +21,7 @@ def to_binary(number):
     
     binary_digits = []
     
-    # Handle the special case where the number is zero
+    # Handeling the special case where the number is zero
     if number == 0:
         binary_digits.append(0)
     
@@ -44,7 +44,7 @@ def to_binary(number):
     return padded_binary_str
 
 def main():
-    """Main function to execute the program."""
+    
     try:
         decimal_number = int(input("Enter a non-negative integer: "))
         if decimal_number < 0:
