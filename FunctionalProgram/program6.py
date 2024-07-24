@@ -30,15 +30,15 @@ def to_binary(number):
         binary_digits.append(number % 2)
         number //= 2
     
-    # Reverse the list to get the correct binary representation
+    
     binary_digits.reverse()
     
-    # Convert list of digits to string without using map
+    
     binary_str = ''
     for digit in binary_digits:
         binary_str += str(digit)
     
-    # Pad the binary string to ensure it is 32 bits (4 bytes)
+    # Pad the binary string to ensure it is 32 bits
     padded_binary_str = binary_str.zfill(32)
     
     return padded_binary_str
